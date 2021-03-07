@@ -462,6 +462,7 @@ CREATE TABLE `webset` (
   `manage_email` varchar(50) DEFAULT NULL,
   `langs` varchar(50) DEFAULT NULL,
   `verify_code` int(1) DEFAULT NULL,
+  `isopen_coupon` int(1) NOT NULL DEFAULT '1',
   `isopen_searchpwd` int(1) NOT NULL DEFAULT '1',
   `isopen_serverj` int(1) DEFAULT NULL,
   `serverj_token` varchar(100) DEFAULT NULL,
