@@ -49,6 +49,7 @@ class Setting extends Form
         $this->email('manage_email', __('Sys manage email'))->rules('required')->help("用于接收待处理订单提醒");
         $this->select('langs', __('Sys Langs'))->options(config('dujiao.language'))->rules('required')->help('默认为简体中文 zh-CN，不会翻译语言包不要改');
         $this->radio('verify_code', __('Verify Code'))->options([1 => '开启', 2 => '关闭'])->default(1);
+        $this->radio('isopen_coupon', __('Is open coupon'))->options([1 => '开启', 2 => '关闭'])->default(1);  //优惠码开关
         $this->radio('isopen_searchpwd', __('Is open searchpwd'))->options([1 => '开启', 2 => '关闭'])->default(1);
         $this->radio('isopen_serverj', __('Is open serverj'))->options([1 => '开启', 2 => '关闭'])->default(1);
         $this->text('serverj_token', __('Serverj token'));
